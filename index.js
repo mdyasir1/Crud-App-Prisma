@@ -8,7 +8,7 @@ app.use(express.json())
 
 
 // Get all users
-app.get('/evtg', (req, res) => {
+app.get('/users', (req, res) => {
     prisma.users.findMany().then(data => res.json(data));
 })
 
